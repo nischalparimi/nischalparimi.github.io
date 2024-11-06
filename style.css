@@ -1,0 +1,200 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: #000;
+    /* Set background color to black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #ffffff !important;
+    /* Set link color to white for contrast */
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #4f46e5 !important;
+    /* Optional: Set hover color for a subtle effect */
+}
+
+
+/* Hero Section */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+}
+
+.hero-button {
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #3b82f6;
+}
+
+/* About Section */
+#about img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+}
+
+#about h2 {
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Projects Section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* Contact Form */
+#contact {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #f1f5f9;
+}
+
+.form-control {
+    border: none;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#contact button {
+    background-color: #f1f5f9;
+    color: #2563eb;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e2e8f0;
+    color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.card-img-top {
+    height: 150px;
+    /* Adjust height as needed */
+    object-fit: cover;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .bg-gradient-to-r h1 {
+        font-size: 2.5rem;
+    }
+
+    .bg-gradient-to-r p {
+        font-size: 1rem;
+    }
+
+    #about img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-gradient-to-r h1 {
+        font-size: 1.75rem;
+    }
+
+    .bg-gradient-to-r p {
+        font-size: 0.875rem;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    /* Adjust the value for more or less rounding */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    /* Use !important if needed to override other styles */
+}
